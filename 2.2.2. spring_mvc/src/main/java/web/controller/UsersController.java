@@ -80,31 +80,4 @@ public class UsersController {
         userService.delete(user);
         return modelAndView;
     }
-//
-//    @RequestMapping(value = "/", method = RequestMethod.GET)
-//    public String listUsers(Model model) {
-//        model.addAttribute("listUser", userDAO.usersList());
-//        return "users";
-//    }
-//
-//    @RequestMapping(value = "/user/add", method = RequestMethod.POST)
-//    public String addUser(@ModelAttribute("user") User user) {
-//        if (user.getId() == 0) this.userDAO.addUser(user);
-//        this.userDAO.editUser(user);
-//        return "redirect:/";
-//    }
-//
-//    @RequestMapping(value = "/remove/{id}")
-//    public String removeUser(@PathVariable("id") int id) {
-//        User user = userDAO.getById(id);
-//        this.userDAO.deleteUser(user);
-//        return "redirect:/";
-//    }
-//
-//    @RequestMapping(value = "/edit/{id}")
-//    public String show(@PathVariable("id") int id, Model model) {
-//        User user = userDAO.getById(id);
-//        model.addAttribute("user", user);
-//        return "update-user";
-//    }
 }

@@ -51,6 +51,6 @@ public class UserDAOImpl implements UserDAO {
     @Override
     public User getById(int id) {
         Session session = sessionFactory.getCurrentSession();
-        return (User) session.get(User.class, id);
+        return session.get(User.class, id);
     }
 }
