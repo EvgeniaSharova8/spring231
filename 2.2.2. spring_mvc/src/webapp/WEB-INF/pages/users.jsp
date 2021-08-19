@@ -20,8 +20,8 @@
             <td>${user.lastName}</td>
             <td>${user.year}</td>
             <td>
-                <a href="/edit/${user.id}">edit</a>
-                <a href="/delete/${user.id}">delete</a>
+                <a href="/edit/?id=${user.id}">edit</a>
+                <a href="/delete/?id=${user.id}">delete</a>
             </td>
         </tr>
     </c:forEach>
